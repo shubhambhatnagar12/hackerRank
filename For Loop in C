@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+
+int main() 
+{
+    int a, b,i,j;
+    scanf("%d\n%d", &a, &b);
+    i=a;
+  	// Complete the code.
+    char ch[9][6]={
+        
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine"
+    };
+      if(b<=9){
+        for(int i=a;i<=b;i++)
+        {
+            printf("%s\n",ch[i-1]);  //just print from a to b
+            
+        }
+    }
+    else 
+    {   
+        
+        
+        
+            for(i=a;i<=10;i++)   // less than= 10 so that it can check i>=10 
+            {
+            
+            
+            if(i>=10)
+            {
+             for(j=10;j<=b;j++)
+             {
+                    if(j%2==0)
+                    printf("even\n");
+                    else
+                    printf("odd\n");
+             }
+                exit(0);
+            }
+            printf("%s\n",ch[i-1]);          //if i is not >=10 print numbers
+            }
+        
+    }
+    return 0;
+}
